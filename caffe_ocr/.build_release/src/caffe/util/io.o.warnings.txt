@@ -1,0 +1,9 @@
+In file included from src/caffe/util/io.cpp:10:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+src/caffe/util/io.cpp: In function ‘cv::Mat caffe::ReadDataAugToCVMat(const string&, int, int, int, int, int, int, bool, bool)’:
+src/caffe/util/io.cpp:297:7: warning: unused variable ‘resize_type’ [-Wunused-variable]
+   int resize_type = rng.next() % 3;
+       ^

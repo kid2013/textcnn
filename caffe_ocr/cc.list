@@ -1,0 +1,507 @@
+CXX .build_release/src/caffe/proto/caffe.pb.cc
+CXX src/caffe/layer.cpp
+CXX src/caffe/util/blocking_queue.cpp
+CXX src/caffe/util/insert_splits.cpp
+CXX src/caffe/util/db_leveldb.cpp
+CXX src/caffe/util/upgrade_proto.cpp
+CXX src/caffe/util/cudnn.cpp
+CXX src/caffe/util/math_functions.cpp
+CXX src/caffe/util/signal_handler.cpp
+CXX src/caffe/util/db_lmdb.cpp
+CXX src/caffe/util/augmentation.cpp
+CXX src/caffe/util/hdf5.cpp
+CXX src/caffe/util/io.cpp
+CXX src/caffe/util/im2col.cpp
+CXX src/caffe/util/benchmark.cpp
+CXX src/caffe/util/db.cpp
+CXX src/caffe/net.cpp
+CXX src/caffe/syncedmem.cpp
+CXX src/caffe/internal_thread.cpp
+CXX src/caffe/blob.cpp
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from src/caffe/util/db.cpp:1:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from src/caffe/util/db.cpp:1:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from src/caffe/util/cudnn.cpp:2:0:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from src/caffe/util/cudnn.cpp:2:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/math_functions.hpp:9,
+                 from src/caffe/util/im2col.cpp:4:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/math_functions.hpp:9,
+                 from src/caffe/util/im2col.cpp:4:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from ./include/caffe/util/db_lmdb.hpp:10,
+                 from src/caffe/util/db_lmdb.cpp:2:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from ./include/caffe/util/db_lmdb.hpp:10,
+                 from src/caffe/util/db_lmdb.cpp:2:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from ./include/caffe/util/db_leveldb.hpp:10,
+                 from src/caffe/util/db_leveldb.cpp:2:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/util/db.hpp:6,
+                 from ./include/caffe/util/db_leveldb.hpp:10,
+                 from src/caffe/util/db_leveldb.cpp:2:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/syncedmem.cpp:1:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/syncedmem.cpp:1:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/insert_splits.cpp:7:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/insert_splits.cpp:7:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/util/hdf5.hpp:9,
+                 from src/caffe/util/hdf5.cpp:1:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/util/hdf5.hpp:9,
+                 from src/caffe/util/hdf5.cpp:1:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layer.hpp:8,
+                 from src/caffe/layer.cpp:1:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layer.hpp:8,
+                 from src/caffe/layer.cpp:1:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from src/caffe/blob.cpp:4:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from src/caffe/blob.cpp:4:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from src/caffe/util/augmentation.cpp:1:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/augmentation.cpp:12:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/augmentation.cpp:12:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+src/caffe/util/augmentation.cpp: In member function ‘void Demo_words::add_line(cv::Mat&)’:
+src/caffe/util/augmentation.cpp:943:7: warning: unused variable ‘n’ [-Wunused-variable]
+   int n = 0;
+       ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/upgrade_proto.cpp:8:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/upgrade_proto.cpp:8:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from src/caffe/util/io.cpp:10:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/io.cpp:19:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/io.cpp:19:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+src/caffe/util/io.cpp: In function ‘cv::Mat caffe::ReadDataAugToCVMat(const string&, int, int, int, int, int, int, bool, bool)’:
+src/caffe/util/io.cpp:297:7: warning: unused variable ‘resize_type’ [-Wunused-variable]
+   int resize_type = rng.next() % 3;
+       ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/net.cpp:10:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/net.cpp:10:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/benchmark.cpp:3:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/benchmark.cpp:3:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/math_functions.cpp:6:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from src/caffe/util/math_functions.cpp:6:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/net.hpp:10,
+                 from ./include/caffe/solver.hpp:7,
+                 from ./include/caffe/util/signal_handler.h:5,
+                 from src/caffe/util/signal_handler.cpp:7:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/net.hpp:10,
+                 from ./include/caffe/solver.hpp:7,
+                 from ./include/caffe/util/signal_handler.h:5,
+                 from src/caffe/util/signal_handler.cpp:7:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layers/base_data_layer.hpp:6,
+                 from src/caffe/util/blocking_queue.cpp:4:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layers/base_data_layer.hpp:6,
+                 from src/caffe/util/blocking_queue.cpp:4:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/internal_thread.hpp:4,
+                 from src/caffe/internal_thread.cpp:4:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+./include/caffe/util/cudnn.hpp: In function ‘void caffe::cudnn::setConvolutionDesc(cudnnConvolutionStruct**, cudnnTensorDescriptor_t, cudnnFilterDescriptor_t, int, int, int, int)’:
+./include/caffe/util/cudnn.hpp:113:70: error: too few arguments to function ‘cudnnStatus_t cudnnSetConvolution2dDescriptor(cudnnConvolutionDescriptor_t, int, int, int, int, int, int, cudnnConvolutionMode_t, cudnnDataType_t)’
+       pad_h, pad_w, stride_h, stride_w, 1, 1, CUDNN_CROSS_CORRELATION));
+                                                                      ^
+./include/caffe/util/cudnn.hpp:15:28: note: in definition of macro ‘CUDNN_CHECK’
+     cudnnStatus_t status = condition; \
+                            ^
+In file included from ./include/caffe/util/cudnn.hpp:5:0,
+                 from ./include/caffe/util/device_alternate.hpp:40,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/internal_thread.hpp:4,
+                 from src/caffe/internal_thread.cpp:4:
+/usr/local/cuda-8.0/include/cudnn.h:537:27: note: declared here
+ cudnnStatus_t CUDNNWINAPI cudnnSetConvolution2dDescriptor( cudnnConvolutionDescriptor_t convDesc,
+                           ^

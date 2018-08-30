@@ -1,0 +1,5 @@
+In file included from src/caffe/layers/softmax_loss_layer.cpp:7:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^

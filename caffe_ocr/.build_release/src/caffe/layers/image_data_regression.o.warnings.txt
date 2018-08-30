@@ -1,0 +1,14 @@
+In file included from ./include/caffe/layers/image_data_regression.hpp:15:0,
+                 from src/caffe/layers/image_data_regression.cpp:13:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+src/caffe/layers/image_data_regression.cpp: In instantiation of ‘void caffe::ImageDataRegressionLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/image_data_regression.cpp:199:1:   required from here
+src/caffe/layers/image_data_regression.cpp:41:17: warning: unused variable ‘translabelfile’ [-Wunused-variable]
+   const string& translabelfile = this->layer_param_.image_data_regression_param().translabel_file();
+                 ^
+src/caffe/layers/image_data_regression.cpp: In instantiation of ‘void caffe::ImageDataRegressionLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/image_data_regression.cpp:199:1:   required from here
+src/caffe/layers/image_data_regression.cpp:41:17: warning: unused variable ‘translabelfile’ [-Wunused-variable]

@@ -1,0 +1,37 @@
+In file included from src/caffe/layers/image_data_layer.cpp:18:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+src/caffe/layers/image_data_layer.cpp: In instantiation of ‘void caffe::ImageDataLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/image_data_layer.cpp:222:1:   required from here
+src/caffe/layers/image_data_layer.cpp:71:10: warning: unused variable ‘pos’ [-Wunused-variable]
+   size_t pos;
+          ^
+src/caffe/layers/image_data_layer.cpp:72:7: warning: unused variable ‘label’ [-Wunused-variable]
+   int label;
+       ^
+src/caffe/layers/image_data_layer.cpp: In instantiation of ‘void caffe::ImageDataLayer<Dtype>::load_batch(caffe::Batch<Dtype>*) [with Dtype = float]’:
+src/caffe/layers/image_data_layer.cpp:222:1:   required from here
+src/caffe/layers/image_data_layer.cpp:162:14: warning: unused variable ‘is_data_augment’ [-Wunused-variable]
+   const bool is_data_augment = image_data_param.is_data_augment();
+              ^
+src/caffe/layers/image_data_layer.cpp:163:14: warning: unused variable ‘is_resize_pad’ [-Wunused-variable]
+   const bool is_resize_pad = image_data_param.is_resize_pad();
+              ^
+src/caffe/layers/image_data_layer.cpp: In instantiation of ‘void caffe::ImageDataLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/image_data_layer.cpp:222:1:   required from here
+src/caffe/layers/image_data_layer.cpp:71:10: warning: unused variable ‘pos’ [-Wunused-variable]
+   size_t pos;
+          ^
+src/caffe/layers/image_data_layer.cpp:72:7: warning: unused variable ‘label’ [-Wunused-variable]
+   int label;
+       ^
+src/caffe/layers/image_data_layer.cpp: In instantiation of ‘void caffe::ImageDataLayer<Dtype>::load_batch(caffe::Batch<Dtype>*) [with Dtype = double]’:
+src/caffe/layers/image_data_layer.cpp:222:1:   required from here
+src/caffe/layers/image_data_layer.cpp:162:14: warning: unused variable ‘is_data_augment’ [-Wunused-variable]
+   const bool is_data_augment = image_data_param.is_data_augment();
+              ^
+src/caffe/layers/image_data_layer.cpp:163:14: warning: unused variable ‘is_resize_pad’ [-Wunused-variable]
+   const bool is_resize_pad = image_data_param.is_resize_pad();
+              ^

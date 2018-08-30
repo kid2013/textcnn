@@ -1,0 +1,13 @@
+In file included from src/caffe/util/augmentation.cpp:1:0:
+./include/caffe/util/augmentation.hpp: In static member function ‘static float random::randf(float, float)’:
+./include/caffe/util/augmentation.hpp:93:19: warning: unused variable ‘t’ [-Wunused-variable]
+             float t = minf;
+                   ^
+src/caffe/util/augmentation.cpp: In function ‘std::string strip(std::string)’:
+src/caffe/util/augmentation.cpp:100:6: warning: variable ‘start’ set but not used [-Wunused-but-set-variable]
+  int start = 0;
+      ^
+src/caffe/util/augmentation.cpp: In member function ‘void Demo_words::add_line(cv::Mat&)’:
+src/caffe/util/augmentation.cpp:943:7: warning: unused variable ‘n’ [-Wunused-variable]
+   int n = 0;
+       ^
