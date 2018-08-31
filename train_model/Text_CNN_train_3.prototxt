@@ -12,7 +12,7 @@ layer {
     mirror: false
   }
   image_data_regression_param {
-    source: "/ssd/wanwuming/var_num/train_pos.list.sed"
+    source: "/ssd/username/var_num/train_pos.list.sed"
     batch_size:100 
     is_color:false
      new_height:32
@@ -35,7 +35,7 @@ layer {
     mirror: false
   }
   image_data_regression_param {
-    source: "/ssd/wanwuming/var_num/train_neg.list.sed"
+    source: "/ssd/username/var_num/train_neg.list.sed"
     batch_size:100 
     is_color:false
     new_height:32
@@ -59,8 +59,8 @@ layer {
     mirror: false
   }
   image_data_regression_param {
-    # source: "/ssd/wanwuming/narrow/random_alnum_pos_test.list.sed"
-    source:"/home/wanwuming/forward/real_test.list"
+    # source: "/ssd/username/narrow/random_alnum_pos_test.list.sed"
+    source:"/home/username/forward/real_test.list"
     batch_size: 28
     is_color:false
     new_height:32

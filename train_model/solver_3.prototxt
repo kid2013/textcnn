@@ -17,5 +17,5 @@ max_iter: 1000000
 momentum: 0.9
 weight_decay: 0.0002
 snapshot: 2000
-snapshot_prefix: "/home/wanwuming/textcnn/train_model/snap_shot3/"
+snapshot_prefix: "/home/username/textcnn/train_model/snap_shot3/"
 solver_mode: GPU
