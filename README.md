@@ -4,4 +4,4 @@
 
 ## directory structure
 + caffe_ocr/  --dir: a directory contains caffe source code. main change : add file image_data_regression.cpp
-+ train_model/  --dir: a directory contains some necessary files to trian the model
++ train_model/  --dir: a directory contains some necessary files to train the model
