@@ -564,8 +564,8 @@ void AddRandNoise(cv::Mat& image, const int maxvalue)
     static vector<Mat> mlist;
     if(mlist.size() == 0)
     {
-        string listfile = "/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/rand.list";
-        //string listfile = "/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/idcardnoise.list";
+        string listfile = "/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/rand.list";
+        //string listfile = "/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/idcardnoise.list";
         static_load_image(listfile, mlist);
     }
     Rect rt;
@@ -592,8 +592,8 @@ void AddLine2Noise(cv::Mat& image, const int maxvalue)
     static vector<Mat> mlist;
     if(mlist.size() == 0)
     {
-        string listfile = "/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/line.list";
-        //string listfile = "/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/idcardnoise.list";
+        string listfile = "/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/line.list";
+        //string listfile = "/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/idcardnoise.list";
         static_load_image(listfile, mlist);
     }
     Rect rt;
@@ -1049,12 +1049,12 @@ public:
 
 	Demo_words()
 	{
-		static_load_image("/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/rand.list", noises);
-		static_load_image("/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/texture.list", noises);
+		static_load_image("/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/rand.list", noises);
+		static_load_image("/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/texture.list", noises);
 		//for(int i = 0; i < noises.size(); i++){ Mat n = noises[i]; norm_image(n); noises[i] = n / 4 + 192;}
-		static_load_image("/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/line_black.list", lines_black);
+		static_load_image("/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/line_black.list", lines_black);
 		for(int i = 0; i < lines_black.size(); i++) blur(lines_black[i], lines_black[i], Size(3,3));
-		static_load_image("/home/wanwuming/ocr1/caffe_cls/caffe_ocr/src/noise/line_white.list", lines_white);
+		static_load_image("/home/username/ocr1/caffe_cls/caffe_ocr/src/noise/line_white.list", lines_white);
 		for(int i = 0; i < lines_white.size(); i++) blur(lines_white[i], lines_white[i], Size(3,3));
 	}
 

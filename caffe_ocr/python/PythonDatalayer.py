@@ -8,7 +8,7 @@
 #vehicle brand :
 
 
-caffe_root_python = '/home/wanwuming/ocr1/caffe_cls/caffe_ocr/python'
+caffe_root_python = '/home/username/ocr1/caffe_cls/caffe_ocr/python'
 import sys
 sys.path.insert(0,caffe_root_python)
 
@@ -193,9 +193,9 @@ class PythonDatalayer(caffe.Layer):
 
 
 if __name__ == "__main__":
-    param_str = "{'batch_size': 256, 'height':32, 'width':32, 'source':'/home/wanwuming/ocr1/data/ocr_idcard/list/name_address_label_id.txt', 'root_folder':''}"
+    param_str = "{'batch_size': 256, 'height':32, 'width':32, 'source':'/home/username/ocr1/data/ocr_idcard/list/name_address_label_id.txt', 'root_folder':''}"
     t = PythonDatalayer()
-    t._source = '/home/wanwuming/ocr1/data/ocr_seg/imagelabel.list'
+    t._source = '/home/username/ocr1/data/ocr_seg/imagelabel.list'
     t._root_folder = ''
     t._batch_size = 10 
     t._height = 5

@@ -1,12 +1,12 @@
-diff benchmark.hpp /home/wanwuming/src/caffe/include/caffe/util/benchmark.hpp
-diff db_lmdb.hpp /home/wanwuming/src/caffe/include/caffe/util/db_lmdb.hpp
-diff im2col.hpp /home/wanwuming/src/caffe/include/caffe/util/im2col.hpp
-diff nccl.hpp /home/wanwuming/src/caffe/include/caffe/util/nccl.hpp
-diff blocking_queue.hpp /home/wanwuming/src/caffe/include/caffe/util/blocking_queue.hpp
-diff device_alternate.hpp /home/wanwuming/src/caffe/include/caffe/util/device_alternate.hpp
-diff insert_splits.hpp /home/wanwuming/src/caffe/include/caffe/util/insert_splits.hpp
-diff rng.hpp /home/wanwuming/src/caffe/include/caffe/util/rng.hpp
-diff cudnn.hpp /home/wanwuming/src/caffe/include/caffe/util/cudnn.hpp
+diff benchmark.hpp /home/username/src/caffe/include/caffe/util/benchmark.hpp
+diff db_lmdb.hpp /home/username/src/caffe/include/caffe/util/db_lmdb.hpp
+diff im2col.hpp /home/username/src/caffe/include/caffe/util/im2col.hpp
+diff nccl.hpp /home/username/src/caffe/include/caffe/util/nccl.hpp
+diff blocking_queue.hpp /home/username/src/caffe/include/caffe/util/blocking_queue.hpp
+diff device_alternate.hpp /home/username/src/caffe/include/caffe/util/device_alternate.hpp
+diff insert_splits.hpp /home/username/src/caffe/include/caffe/util/insert_splits.hpp
+diff rng.hpp /home/username/src/caffe/include/caffe/util/rng.hpp
+diff cudnn.hpp /home/username/src/caffe/include/caffe/util/cudnn.hpp
 43a44,53
 > #if CUDNN_VERSION_MIN(6, 0, 0)
 >     case CUDNN_STATUS_RUNTIME_PREREQUISITE_MISSING:
@@ -27,8 +27,8 @@ diff cudnn.hpp /home/wanwuming/src/caffe/include/caffe/util/cudnn.hpp
 >     CUDNN_CHECK(cudnnSetConvolution2dDescriptor(*conv,
 113a129
 > #endif
-diff format.hpp /home/wanwuming/src/caffe/include/caffe/util/format.hpp
-diff io.hpp /home/wanwuming/src/caffe/include/caffe/util/io.hpp
+diff format.hpp /home/username/src/caffe/include/caffe/util/format.hpp
+diff io.hpp /home/username/src/caffe/include/caffe/util/io.hpp
 133,155d132
 < cv::Mat ReadDataAugToCVMat(const string& filename, const int x1_label, const int y1_label, 
 <     const int x2_label, const int y2_label,
@@ -55,10 +55,10 @@ diff io.hpp /home/wanwuming/src/caffe/include/caffe/util/io.hpp
 < 
 171d147
 < 
-diff signal_handler.h /home/wanwuming/src/caffe/include/caffe/util/signal_handler.h
-diff db.hpp /home/wanwuming/src/caffe/include/caffe/util/db.hpp
-diff gpu_util.cuh /home/wanwuming/src/caffe/include/caffe/util/gpu_util.cuh
-diff math_functions.hpp /home/wanwuming/src/caffe/include/caffe/util/math_functions.hpp
+diff signal_handler.h /home/username/src/caffe/include/caffe/util/signal_handler.h
+diff db.hpp /home/username/src/caffe/include/caffe/util/db.hpp
+diff gpu_util.cuh /home/username/src/caffe/include/caffe/util/gpu_util.cuh
+diff math_functions.hpp /home/username/src/caffe/include/caffe/util/math_functions.hpp
 55a56,58
 > void caffe_sqrt(const int N, const Dtype* a, Dtype* y);
 > 
@@ -79,9 +79,9 @@ diff math_functions.hpp /home/wanwuming/src/caffe/include/caffe/util/math_functi
 > 
 > template <typename Dtype>
 > void caffe_gpu_sqrt(const int n, const Dtype* a, Dtype* y);
-diff upgrade_proto.hpp /home/wanwuming/src/caffe/include/caffe/util/upgrade_proto.hpp
-diff db_leveldb.hpp /home/wanwuming/src/caffe/include/caffe/util/db_leveldb.hpp
-diff hdf5.hpp /home/wanwuming/src/caffe/include/caffe/util/hdf5.hpp
+diff upgrade_proto.hpp /home/username/src/caffe/include/caffe/util/upgrade_proto.hpp
+diff db_leveldb.hpp /home/username/src/caffe/include/caffe/util/db_leveldb.hpp
+diff hdf5.hpp /home/username/src/caffe/include/caffe/util/hdf5.hpp
 16c16
 <     Blob<Dtype>* blob);
 ---
@@ -90,7 +90,7 @@ diff hdf5.hpp /home/wanwuming/src/caffe/include/caffe/util/hdf5.hpp
 <     Blob<Dtype>* blob);
 ---
 >     Blob<Dtype>* blob, bool reshape = false);
-diff mkl_alternate.hpp /home/wanwuming/src/caffe/include/caffe/util/mkl_alternate.hpp
+diff mkl_alternate.hpp /home/username/src/caffe/include/caffe/util/mkl_alternate.hpp
 39,42c39,43
 < DEFINE_VSL_UNARY_FUNC(Sqr, y[i] = a[i] * a[i]);
 < DEFINE_VSL_UNARY_FUNC(Exp, y[i] = exp(a[i]));
